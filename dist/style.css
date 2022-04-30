@@ -605,11 +605,13 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+    flex-grow: 1;
     width: 570px;
   }
 
   .site-list__item {
     margin-right: 32px;
+    flex-grow: 1;
   }
   .site-list__item:last-child {
     margin-right: 0;

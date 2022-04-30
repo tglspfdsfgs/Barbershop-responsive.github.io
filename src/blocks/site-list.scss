@@ -44,12 +44,15 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: flex-start;
+		flex-grow: 1;
 
 		width: 570px;
 	}
 
 	.site-list__item {
 		margin-right: 32px;
+		//temp
+		flex-grow: 1;
 
 		&:last-child {
 		margin-right: 0;
