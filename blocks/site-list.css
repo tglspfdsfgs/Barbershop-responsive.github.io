@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap");
 body {
   min-width: 320px;
   margin: 0;
@@ -67,7 +68,6 @@ img {
 
   .site-list__item {
     margin-right: 32px;
-    flex-grow: 1;
   }
   .site-list__item:last-child {
     margin-right: 0;
@@ -131,4 +131,3 @@ img {
     opacity: 1;
   }
 }
-/*# sourceMappingURL=site-list.css.map */
