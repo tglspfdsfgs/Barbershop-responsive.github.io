@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap");
 body {
   min-width: 320px;
   margin: 0;
@@ -248,4 +249,3 @@ img {
     width: 640px;
   }
 }
-/*# sourceMappingURL=stats.css.map */

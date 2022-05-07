@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap");
 body {
   min-width: 320px;
   margin: 0;
@@ -56,7 +57,14 @@ img {
     background-repeat: no-repeat;
     background-position: center -9px;
   }
-
+}
+@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
+  .page-header__logo {
+    background-image: url(../img/bg-header@2x.jpg);
+    background-size: 1200px auto;
+  }
+}
+@media (min-width: 768px) {
   .page-header__logo img {
     display: block;
     width: 370px;
@@ -65,6 +73,13 @@ img {
     margin-top: 40px;
   }
 }
+/* example how to scss inner media-query (inside another media-query) compile into pure css */
+/*
+@media (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
+	.page-header__logo {
+		background-image: url(../img/bg-header@2x.jpg);
+	}
+}*/
 @media (min-width: 1200px) {
   .page-header__logo {
     height: 648px;
@@ -76,4 +91,3 @@ img {
     margin-top: 57px;
   }
 }
-/*# sourceMappingURL=page-header.css.map */
