@@ -1,0 +1,32 @@
+@import "../variables.scss";
+@import "../scaffolding.scss";
+@import "../mixins.scss";
+
+.button {
+	display: block;
+	padding-top: 12px;
+	padding-bottom: 12px;
+
+	color: #000000;
+	font-weight: bold;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 24px;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	
+	border: 1px solid #e5ddd5;
+}
+
+.button:active {
+	background-color: #eee8e2;
+	color: #aeacaa;
+	border: 1px solid #eee8e2;
+}
+
+@media (min-width: $tablet-width) {
+	.button{ 
+		width: 160px;
+	}
+}

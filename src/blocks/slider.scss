@@ -1,0 +1,51 @@
+@import "../variables.scss";
+@import "../scaffolding.scss";
+@import "../mixins.scss";
+
+.slider__toggles {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 76px;
+
+}
+
+.slider__toggle {
+	display: block;
+
+	padding: 0;
+	width: 20px;
+	height: 20px;
+	transform: scale(0.35) rotate(45deg);
+
+	font-size: 0;
+
+	border: 4px solid #ffffff;
+	background-color: unset;
+}
+
+
+.slider__toggle--active {
+	background-color: #ffffff;
+}
+
+.slider__toggle:hover {
+	cursor: pointer;
+}
+
+.slider__item {
+	display: none;
+}
+
+.slider__item--active {
+	display: block;
+}
+
+@media (min-width: $tablet-width) {
+	.slider__item {
+		display: block;
+	}
+	.slider__toggles {
+		display: none;
+	}
+}

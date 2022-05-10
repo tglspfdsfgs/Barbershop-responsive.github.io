@@ -1,0 +1,118 @@
+@import "../variables.scss";
+@import "../scaffolding.scss";
+@import "../mixins.scss";
+
+.social__title {
+	display: none;
+}
+
+.social__list {
+	list-style: none;
+
+	padding-left: 0;
+	margin: 0;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: stretch;
+}
+
+.social__item {
+	width: 108px;
+	height: 101px;	
+}
+
+.social__link {
+	box-sizing: border-box;
+	font-size: 0;
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	border: 1px solid #3f3f3f;
+}
+
+.social__fb-logo {
+	height: 22px;
+	width: 22px;
+
+    position: absolute;
+  	top: calc(50% - 11px);
+  	left: calc(50% - 11px);
+
+	path {
+		fill: white;
+	}
+}
+
+.social__instagram-logo {
+	height: 22px;
+	width: 22px;
+
+	position: absolute;
+  	top: calc(50% - 11px);
+  	left: calc(50% - 11px);  
+
+	path {
+		fill: white;
+	}
+}
+
+.social__twitter-logo {
+	height: 24px;
+	width: 24px;
+
+	position: absolute;
+  	top: calc(50% - 12px);
+  	left: calc(50% - 12px);  
+
+	path {
+		fill: white;
+	}
+}
+
+.social__link:active {
+	border-color: #252525;
+	background-color: #252525;
+	.social__fb-logo {
+
+		path {
+			fill: #808080;
+		}
+	}
+	.social__twitter-logo {
+
+		path {
+			fill: #808080;
+		}
+	}
+	.social__instagram-logo {
+		path {
+			fill: #808080;
+		}
+	}
+}
+
+@media (min-width: $tablet-width) {
+	.social__item {
+		width: calc(100% / 3);
+	}
+}
+
+@media (min-width: $desktop-width) {
+
+	.social__item {
+		width: 50px;
+		height: 50px;
+	}
+	.social__title {
+  	  	display: block;
+    	text-align: center;
+    	margin-bottom: 12px;
+	}
+
+	.social__list {
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+}

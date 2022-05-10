@@ -1,0 +1,57 @@
+@import "../variables.scss";
+@import "../scaffolding.scss";
+@import "../mixins.scss";
+
+.contacts__title {
+	font-size: 18px;
+	line-height: 27px;
+	font-weight: bold;
+}
+
+.contacts__text {
+	font-size: 18px;
+	line-height: 27px;
+	margin-top: 10px;
+}
+
+.contacts__phone {
+	display: inline-block;
+	width: 100%;
+
+	font-size: 18px;
+	line-height: 27px;
+	font-weight: bold;
+	color: #ffffff;
+	text-decoration: none;
+
+	margin-top: 18px;
+	padding-top: 13px;
+	padding-bottom: 13px;
+
+	border: 1px solid #3f3f3f;
+
+	&:active {
+		color: #808080;
+		border-color: #252525;
+		background-color: #252525;
+	}
+}
+
+@media (min-width: $tablet-width) {
+	.contacts__phone {
+		width: auto;
+		border: none;
+		margin-top: 0;
+		padding: 0;
+		font-weight: normal;
+		&:active {
+			background-color: unset;
+		}
+		&::before {
+			content: "Tel.:";
+		}
+	}
+	.contacts__text {
+		margin-bottom: 0;
+	}
+}
