@@ -85,10 +85,10 @@
 			</small>
 		</section>
 		<section class="advantages">
-			<div class="advantages_wrapper slider">
+			<div class="advantages__wrapper slider">
 				<h2 class="visually-hidden">Our advantages</h2>
 				<ul class="advantages__list slider_list">
-					<li class="advantages__item advantages__item--fast slider__item">
+					<li class="advantages__item advantages__item--fast slider__item slider__item--active">
 						<h3 class="advantages__title">Fast</h3>
 						<p class="advantages__description">
 							We do our work quickly. The time will fly imperceptibly - and you are already a happy owner of a nice haircut.
@@ -108,9 +108,9 @@
 					</li>
 				</ul>
 				<p class="advantages__toggles slider__toggles">
-					<button class="slider__toggle" type="button">1</button>
-					<button class="slider__toggle" type="button">2</button>
-					<button class="slider__toggle" type="button">3</button>
+					<button class="slider__toggle slider__toggle--1 slider__toggle--active" type="button">1</button>
+					<button class="slider__toggle slider__toggle--2" type="button">2</button>
+					<button class="slider__toggle slider__toggle--3" type="button">3</button>
 				</p>
 			</div>
 		</section>
@@ -119,25 +119,31 @@
 				<h2 class="news__title">News and promo</h2>
 				<ul class="news__list">
 					<li class="news__item">
-						<time class="news__date" datetime="2022-01-29">
-							<b class="news__day">29</b>
-							jan
-						</time>
-						<p class="news__text">Finally, We got Jagermeister! Now you grab a drink during a haircut.</p>
+						<a class="news__link" href="#">
+							<time class="news__date" datetime="2022-01-29">
+								<b class="news__day">29</b><br>
+								jan
+							</time>
+							<p class="news__text">Finally, We got Jagermeister! Now you grab a drink during a haircut.</p>
+						</a>
 					</li>
 					<li class="news__item">
-						<time class="news__date" datetime="2022-01-29">
-							<b class="news__day">19</b>
-							jan
-						</time>
-						<p class="news__text">Our team is growing! Boris «Razor» Sherman, the owner numerous awards and the participant in many championships has joined our ranks. Hurry up to make appointment!</p>
+						<a class="news__link" href="#">
+							<time class="news__date" datetime="2022-01-29">
+								<b class="news__day">19</b><br>
+								jan
+							</time>
+							<p class="news__text">Our team is growing! Boris «Razor» Sherman, the owner numerous awards and the participant in many championships has joined our ranks. Hurry up to make appointment!</p>
+						</a>
 					</li>
-					<li class="news__item">
-						<time class="news__date" datetime="2022-01-29">
-							<b class="news__day">9</b>
-							jan
-						</time>
-						<p class="news__text">Everything is getting more expensive, but our haircuts is not! How is that? Come, get a haircut and get to know what's the catch!</p>
+					<li class="news__item news__item--last">
+						<a  class="news__link" href="#">
+							<time class="news__date" datetime="2022-01-29">
+								<b class="news__day">9</b><br>
+								jan
+							</time>
+							<p class="news__text">Everything is getting more expensive, but our haircuts is not! How is that? Come, get a haircut and get to know what's the catch!</p>
+						</a>
 					</li>
 				</ul>
 				<a class="news__to-all button" href="#">Show more</a>
@@ -147,35 +153,50 @@
 			<div class="reviews__wrapper slider">
 				<h2 class="reviews__title">Reviews about us</h2>
 				<a class="reviews__write button" href="#">Write down your</a>
-				<div class="reviews__list slider__list">
-					<blockquote class="reviews__item slider__item">
+				<div class="reviews__list slider2__list">
+					<button class="reviews__switcher reviews__switcher--prev" type="button">&#9204;</button>
+					<blockquote class="reviews__item slider2__item slider2__item--active">
 						<p class="reviews__author-picture">
-							<img src="img/picture-travis.jpg" width="50" height="33" alt="The photo of Travis Barker">
+							<picture>
+								<source media="(min-width: 1200px)" srcset="../img/author-1-d.jpg">
+								<img src="../img/author-1-m&t.jpg" alt="The photo of Travis Barker">
+							</picture>
 						</p>
-						<cite class="reviews__author-name">Travis Barker</cite>
-						<p class="reviews__text">Thanks for a bald head! I was passing by, stopped by to have a shave so that my tattoo can be seen!</p>
+						<div class="reviews__block">
+							<cite class="reviews__author-name">Travis Barker</cite>
+							<p class="reviews__text">Thanks for a bald head! I was passing by, stopped by to have a shave so that my tattoo can be seen!</p>
+						</div>
 					</blockquote>
-					<blockquote class="reviews__item slider__item">
+					<blockquote class="reviews__item slider2__item">
 						<p class="reviews__author-picture">
-							<img src="img/picture-john.jpg" width="50" height="33" alt="The photo of John Smith">
+							<picture>
+								<source media="(min-width: 1200px)" srcset="../img/author-2-d.jpg">
+								<img src="../img/author-2-m&t.jpg" alt="The photo of John Smith">
+							</picture>
 						</p>
-						<cite class="reviews__author-name">John Smith</cite>
-						<p class="reviews__text">You guys gave me a great haircut.</p>
+						<div class="reviews__block">
+							<cite class="reviews__author-name">John Smith</cite>
+							<p class="reviews__text">You guys gave me a great haircut.</p>
+						</div>
 					</blockquote>
-					<blockquote class="reviews__item slider__item">
+					<blockquote class="reviews__item slider2__item">
 						<p class="reviews__author-picture">
-							<img src="img/picture-johan.jpg" width="50" height="33" alt="The photo of John Smith">
+							<picture>
+								<source media="(min-width: 1200px)" srcset="../img/author-3-d.jpg">
+								<img src="../img/author-3-m&t.jpg" alt="The photo of John Smith">
+							</picture>
 						</p>
-						<cite class="reviews__author-name">Johan Bartiger</cite>
-						<p class="reviews__text">In Borodinski your beard in safe hands.</p>
+						<div class="reviews__block">
+							<cite class="reviews__author-name">Johan Bartiger</cite>
+							<p class="reviews__text">In Borodinski your beard in safe hands.</p>
+						</div>
 					</blockquote>
-					<button class="reviews__prev" type="button">Previous review</button>
-					<button class="reviews__next" type="button">Next review</button>
+					<button class="reviews__switcher reviews__switcher--next" type="button">&#9205;</button>
 				</div>
-				<p class="reviews__toggles slider__toggles">
-					<button class="slider__toggle" type="button">1</button>
-					<button class="slider__toggle" type="button">2</button>
-					<button class="slider__toggle" type="button">3</button>
+				<p class="reviews__toggles slider2__toggles">
+					<button class="slider2__toggle slider2__toggle--1 slider2__toggle--active" type="button">1</button>
+					<button class="slider2__toggle slider2__toggle--2" type="button">2</button>
+					<button class="slider2__toggle slider2__toggle--3" type="button">3</button>
 				</p>
 			</div>
 		</section>
@@ -185,8 +206,8 @@
 			<div class="page-footer__contacts contacts">
 				<b class="contacts__title">Barbershop «Borodinski»</b>
 				<p class="contacts__text">New York city, Broadway street 39/6<br>
-				<a charset="contacts__phone" href="tel:+1212121212121">
-					<span class="contacts__phone-mobile">Tel: +1 (212) 121-212-121</span>
+				<a class="contacts__phone" href="tel:+1212121212121">
+					<span class="contacts__phone-mobile">+1 (212) 121-212-121</span>
 				</a>
 				</p>
 			</div>
@@ -194,13 +215,19 @@
 				<b class="social__title">Let's be friends!</b>
 				<ul class="social__list">
 					<li class="social__item">
-						<a class="social__link social__link--twitter" href="#">We are on Twitter</a>
+						<a class="social__link social__link--twitter" href="#">
+							<svg class="social__twitter-logo" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"width="33.88px" height="33.88px" viewBox="0 0 33.88 33.88" style="enable-background:new 0 0 33.88 33.88;" xml:space="preserve"><path d="M30.414,10.031c0.014,0.297,0.021,0.595,0.021,0.897c0,9.187-6.992,19.779-19.779,19.779c-3.928,0-7.58-1.149-10.657-3.123c0.546,0.063,1.099,0.095,1.658,0.095c3.26,0,6.254-1.107,8.632-2.974c-3.039-0.058-5.607-2.065-6.491-4.828c0.424,0.082,0.858,0.125,1.308,0.125c0.635,0,1.248-0.084,1.83-0.244c-3.177-0.639-5.576-3.448-5.576-6.815c0-0.029,0-0.058,0-0.087c0.939,0.521,2.01,0.833,3.15,0.869C2.646,12.48,1.419,10.35,1.419,7.938c0-1.274,0.343-2.467,0.94-3.495c3.427,4.206,8.552,6.973,14.327,7.263c-0.117-0.509-0.18-1.038-0.18-1.584c0-3.838,3.112-6.949,6.953-6.949c1.998,0,3.805,0.844,5.07,2.192c1.582-0.311,3.072-0.89,4.416-1.686c-0.521,1.624-1.621,2.986-3.057,3.844c1.406-0.166,2.746-0.54,3.991-1.092C32.949,7.826,31.771,9.05,30.414,10.031z"/></svg>
+						We are on Twitter</a>
 					</li>
 					<li class="social__item">
-						<a class="social__link social__link--facebook" href="#">We are on Facebook</a>
+						<a class="social__link social__link--facebook" href="#">
+							<svg class="social__fb-logo" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 310 310" style="enable-background:new 0 0 310 310;" xml:space="preserve"><path d="M81.703,165.106h33.981V305c0,2.762,2.238,5,5,5h57.616c2.762,0,5-2.238,5-5V165.765h39.064c2.54,0,4.677-1.906,4.967-4.429l5.933-51.502c0.163-1.417-0.286-2.836-1.234-3.899c-0.949-1.064-2.307-1.673-3.732-1.673h-44.996V71.978c0-9.732,5.24-14.667,15.576-14.667c1.473,0,29.42,0,29.42,0c2.762,0,5-2.239,5-5V5.037c0-2.762-2.238-5-5-5h-40.545C187.467,0.023,186.832,0,185.896,0c-7.035,0-31.488,1.381-50.804,19.151c-21.402,19.692-18.427,43.27-17.716,47.358v37.752H81.703c-2.762,0-5,2.238-5,5v50.844C76.703,162.867,78.941,165.106,81.703,165.106z"/></svg>
+						We are on Facebook</a>
 					</li>
 					<li class="social__item">
-						<a class="social__link social__link--instagram" href="#">We are on Instagram</a>
+						<a class="social__link social__link--instagram" href="#">
+							<svg class="social__instagram-logo" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"width="31.002px" height="31.001px" viewBox="0 0 31.002 31.001" style="enable-background:new 0 0 31.002 31.001;"xml:space="preserve"><path d="M30.988,3.229C30.798,1.383,29.268,0.001,27.409,0C19.473,0,11.538,0,3.602,0.002c-0.217,0-0.438,0.016-0.648,0.057C1.196,0.395,0.002,1.849,0.002,3.638c0,3.956,0,7.912,0,11.868c0,3.948,0,7.896,0.002,11.844c0,0.201,0.015,0.403,0.04,0.604c0.23,1.717,1.755,3.048,3.49,3.049c7.979,0,15.959,0,23.938-0.001c0.137,0,0.272-0.008,0.409-0.023c1.753-0.206,3.116-1.737,3.116-3.502C31,19.496,31,11.516,30.998,3.536C31,3.432,31.002,3.331,30.988,3.229z M15.501,9.542c3.294-0.001,5.96,2.661,5.964,5.958c0.004,3.295-2.658,5.962-5.954,5.964c-3.302,0.001-5.972-2.668-5.968-5.968C9.547,12.21,12.215,9.542,15.501,9.542z M27.432,13.281c0,4.281,0,8.563,0,12.847c0,0.806-0.49,1.301-1.297,1.301c-6.623,0-13.246,0-19.87,0c-0.477,0-0.951,0.001-1.429,0c-0.747-0.001-1.254-0.509-1.254-1.255c-0.001-4.302,0-8.604,0-12.907c0-0.043,0-0.087,0-0.138c0.901,0,1.791,0,2.69,0c-0.602,2.429-0.326,4.753,0.863,6.951c0.869,1.604,2.115,2.851,3.704,3.748c3.138,1.771,7.042,1.604,10.03-0.438c1.658-1.134,2.85-2.642,3.561-4.521c0.707-1.875,0.799-3.789,0.305-5.744c0.901,0,1.789,0,2.695,0C27.432,13.178,27.432,13.229,27.432,13.281z M27.432,8.321c-0.002,0.705-0.521,1.219-1.229,1.22c-0.009,0-0.019,0-0.024,0c-0.574,0-1.152,0-1.73,0c-0.588,0-1.178,0.001-1.768-0.001c-0.679,0-1.207-0.507-1.211-1.186c-0.008-1.195-0.008-2.39,0-3.583c0.004-0.687,0.53-1.19,1.221-1.191c1.176-0.001,2.349-0.001,3.523,0c0.696,0.001,1.217,0.518,1.219,1.218C27.434,5.974,27.434,7.147,27.432,8.321z"/></svg>
+						We are on Instagram</a>
 					</li>
 				</ul>
 			</div>

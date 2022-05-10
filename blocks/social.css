@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap");
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 27px;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-style: normal;
+  color: #f7f4f1;
+  background-color: #292929;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.social__title {
+  display: none;
+}
+
+.social__list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+}
+
+.social__item {
+  width: 108px;
+  height: 101px;
+}
+
+.social__link {
+  box-sizing: border-box;
+  font-size: 0;
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #3f3f3f;
+}
+
+.social__fb-logo {
+  height: 22px;
+  width: 22px;
+  position: absolute;
+  top: calc(50% - 11px);
+  left: calc(50% - 11px);
+}
+.social__fb-logo path {
+  fill: white;
+}
+
+.social__instagram-logo {
+  height: 22px;
+  width: 22px;
+  position: absolute;
+  top: calc(50% - 11px);
+  left: calc(50% - 11px);
+}
+.social__instagram-logo path {
+  fill: white;
+}
+
+.social__twitter-logo {
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  top: calc(50% - 12px);
+  left: calc(50% - 12px);
+}
+.social__twitter-logo path {
+  fill: white;
+}
+
+.social__link:active {
+  border-color: #252525;
+  background-color: #252525;
+}
+.social__link:active .social__fb-logo path {
+  fill: #808080;
+}
+.social__link:active .social__twitter-logo path {
+  fill: #808080;
+}
+.social__link:active .social__instagram-logo path {
+  fill: #808080;
+}
+
+@media (min-width: 768px) {
+  .social__item {
+    width: 33.3333333333%;
+  }
+}
+@media (min-width: 1200px) {
+  .social__item {
+    width: 50px;
+    height: 50px;
+  }
+
+  .social__title {
+    display: block;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+
+  .social__list {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
