@@ -5,10 +5,12 @@
 
 .main-nav {
 	position: relative;
-
+	/* --> fixed layout
 	width: 320px;
+	margin: 0 auto; */
+
 	min-height: 51px;
-	margin: 0 auto;
+	
 
 	background-color: #826550;
 }
@@ -173,7 +175,10 @@
 	.main-nav__wrapper {
 		display: flex;
 		justify-content: space-between;
-		width: 640px;
+		/* --fixed layout
+		width: 640px; */
+		width: 84%;
+		max-width: 960px;
 		margin: 0 auto;
 	}
 
@@ -184,6 +189,8 @@
 
 @media (min-width: $desktop-width) {
 	.main-nav__wrapper {
-		width: 960px;
+		/* fixed layout
+		width: 960px; */
+		max-width: 1200px;
 	}
 }

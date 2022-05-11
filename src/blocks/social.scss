@@ -18,7 +18,7 @@
 }
 
 .social__item {
-	width: 108px;
+	width: calc(100% / 3);
 	height: 101px;	
 }
 
@@ -90,12 +90,6 @@
 		path {
 			fill: #808080;
 		}
-	}
-}
-
-@media (min-width: $tablet-width) {
-	.social__item {
-		width: calc(100% / 3);
 	}
 }
 

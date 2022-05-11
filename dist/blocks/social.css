@@ -43,7 +43,7 @@ img {
 }
 
 .social__item {
-  width: 108px;
+  width: 33.3333333333%;
   height: 101px;
 }
 
@@ -104,11 +104,6 @@ img {
   fill: #808080;
 }
 
-@media (min-width: 768px) {
-  .social__item {
-    width: 33.3333333333%;
-  }
-}
 @media (min-width: 1200px) {
   .social__item {
     width: 50px;

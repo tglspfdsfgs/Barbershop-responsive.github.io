@@ -3,7 +3,9 @@
 @import "../mixins.scss";
 
 .advantages {
-	width: 230px;
+	/* fixed layout
+	width: 230px; */
+	width: 72%;
 	margin: 0 auto;
 }
 
@@ -67,7 +69,9 @@
 @media (min-width: $tablet-width) {
 
 	.advantages {
-		width: 580px;
+		/* fixed layout
+		width: 580px;*/
+		width: 75%;
 		margin: 0 auto;
 }
 
@@ -112,7 +116,10 @@
 
 @media (min-width: $desktop-width) {
 	.advantages {
-		width: 960px;
+		/* fixed layout 
+		width: 960px; */
+		width: 80%;
+		max-width: 1200px;
 	}
 
 	.advantages__list {
@@ -127,7 +134,9 @@
 		padding-left: 0;
 		margin-top: 0;
 		margin-bottom: 0;
-		width: 320px;
+		/* fixed layout 
+		width: 320px; */
+		width: 33%;
 
 		&:nth-child(2)::before {
 			border-top: none;
