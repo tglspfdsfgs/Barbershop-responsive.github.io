@@ -1,0 +1,109 @@
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 27px;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-style: normal;
+  color: #f7f4f1;
+  background-color: #292929;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.table {
+  border-collapse: collapse;
+}
+
+.table__row {
+  vertical-align: text-top;
+}
+
+.table__row {
+  height: 70px;
+}
+
+.table__row-number {
+  display: none;
+}
+
+.table__name {
+  font-weight: bold;
+}
+
+.table__detail {
+  display: block;
+}
+.table__detail::before {
+  content: "(";
+}
+.table__detail::after {
+  content: ")";
+}
+
+.table__price {
+  text-align: right;
+}
+
+@media (min-width: 768px) {
+  .table, .table td {
+    border: 1px solid #3f3f3f;
+  }
+
+  .table__secvice {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: stretch;
+  }
+
+  .table__name {
+    width: 60%;
+    border-right: 2px solid #3f3f3f;
+    padding-left: 20px;
+  }
+
+  .table__detail {
+    padding-left: 20px;
+  }
+  .table__detail::before {
+    content: "";
+  }
+  .table__detail::after {
+    content: "";
+  }
+
+  .table__row {
+    display: flex;
+    line-height: 60px;
+  }
+
+  .table__price {
+    width: 75px;
+    text-align: center;
+  }
+
+  .table__row-number {
+    display: block;
+    width: 70px;
+    text-align: center;
+    color: #9a9a9a;
+  }
+}

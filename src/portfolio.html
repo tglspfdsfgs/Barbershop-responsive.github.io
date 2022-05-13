@@ -4,14 +4,18 @@
 	<meta charset="utf-8">
 	<meta  name="viewport" content="width=device-width, initial-scale=1">
 	<title>Barbershop «Borodinski»</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="portfolio.css">
 	<link rel="stylesheet" type="text/css" href="normalize.css">
 	<style>@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');</style>
 </head>
 <body>
 	<header class="page-header">
 		<a href="#" class="page-header__logo">
-			<img class="page-header__logo-image" width="230" height="85" src="../img/logotype-mobile.svg" alt="Barbershop «Borodinski» logo">	
+			<picture>
+				<source media="(min-width: 1200px)" srcset="../img/logotype-desktop.svg">
+				<source media="(min-width: 768px)" srcset="../img/logotype-tablet.svg">
+				<img class="page-header__logo-image" width="230" height="85" src="../img/logotype-mobile.svg" alt="Barbershop «Borodinski» logo">
+			</picture>
 		</a>
 		<nav class="main-nav main-nav--closed main-nav--nojs">
 			<button class="main-nav__toggle" type="button"><span class="visually-hidden">Open menu</span></button>
@@ -47,75 +51,126 @@
 	</header>
 	
 	<section class="works">
-		<article class="works-item works-item--work-of-month">
-			<p class="works-item__image--wrapper">
-				<picture>
-					<source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
-					<source media="(min-width: 768px)" srcset="img/photo-1-table.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
-					<img src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="The example of our works">
-				</picture>
-			</p>
-			<div class="works-item__review">
-				<h2 class="works-item__title">Thomas Atkins</h2>
-				<blockquote class="works-item__text">Whenever I have cut my hair, but the way you do this - nobody can repeat! Thanks again and see you soon!</blockquote>
-				<ul class="works-item__parameter-list">
-					<li class="works-item__parameter-item works-item__parameter-item--haircut">Haircut</li>
-					<li class="works-item__parameter-item works-item__parameter-item--shaving">Shaving</li>
-					<li class="works-item__parameter-item works-item__parameter-item--mustache">Mustache</li>
-				</ul>
+		<div class="works__wrapprer">
+			<h2 class="works__header">Our works</h2>
+			<article class="works-item works-item--work-of-month">
+				<p class="works-item__image--wrapper">
+					<picture>
+						<source media="(min-width: 1200px)" srcset="../img/photo_1_desktop.jpg">
+						<source media="(min-width: 768px)" srcset="../img/photo_1_table.jpg">
+						<img src="../img/photo_1_mobile.jpg" alt="The example of our works">
+					</picture>
+				</p>
+				<div class="works-item__review">
+					<h2 class="works-item__title">Thomas Atkins</h2>
+					<blockquote class="works-item__text">Whenever I have cut my hair, but the way you do this - nobody can repeat! Thanks again and see you soon!</blockquote>
+					<ul class="works-item__parameter-list">
+						<li class="works-item__parameter-item works-item__parameter-item--haircut">Haircut</li>
+						<li class="works-item__parameter-item works-item__parameter-item--shaving">Shaving</li>
+						<li class="works-item__parameter-item works-item__parameter-item--mustache">Mustache</li>
+					</ul>
+				</div>
+			</article>
+			<article class="works-item">
+				<p class="works-item__image--wrapper">
+					<picture>
+						<source media="(min-width: 1200px)" srcset="../img/photo_2_desktop.jpg">
+						<source media="(min-width: 768px)" srcset="../img/photo_2_tablet.jpg">
+						<img src="../img/photo_2_mobile.jpg"alt="The example of our works">
+					</picture>
+				</p>
+				<div class="works-item__review">
+					<h2 class="works-item__title">Alex Bloggs</h2>
+					<blockquote class="works-item__text">Asked to rejuvenate and got rejuvenated! Now who says that I'm 45?</blockquote>
+					<ul class="works-item__parameter-list">
+						<li class="works-item__parameter-item works-item__parameter-item--haircut">Haircut</li>
+					</ul>
+				</div>
+			</article>
+			<article class="works-item">
+				<p class="works-item__image--wrapper">
+					<picture>
+						<source media="(min-width: 1200px)" srcset="../img/photo_3_desktop.jpg">
+						<source media="(min-width: 768px)" srcset="../img/photo_3_tablet.jpg">
+						<img src="../img/photo_3_mobile.jpg" alt="The example of our works">
+					</picture>
+				</p>
+				<div class="works-item__review">
+					<h2 class="works-item__title">Vladimir Ivanovich</h2>
+					<blockquote class="works-item__text">Ready for the winter!</blockquote>
+					<ul class="works-item__parameter-list">
+						<li class="works-item__parameter-item works-item__parameter-item--haircut">Haircut</li>
+					</ul>
+				</div>
+			</article>
+			<article class="works-item">
+				<p class="works-item__image--wrapper">
+					<picture>
+						<source media="(min-width: 1200px)" srcset="../img/photo_4_desktop.jpg">
+						<source media="(min-width: 768px)" srcset="../img/photo_4_tablet.jpg">
+						<img src="../img/photo_4_mobile.jpg" alt="The example of our works">
+					</picture>
+				</p>
+				<div class="works-item__review">
+					<h2 class="works-item__title">Winston Blue</h2>
+					<blockquote class="works-item__text">As I start to overgrow, and hairs hinder to see - I am in the Borodinski in a flash!</blockquote>
+					<ul class="works-item__parameter-list">
+						<li class="works-item__parameter-item works-item__parameter-item--shaving">Shaving</li>
+						<li class="works-item__parameter-item works-item__parameter-item--mustache">Mustache</li>
+					</ul>
+				</div>
+			</article>
+		</div>
+	</section>
+	<section class="price-list">
+		<div class="price-list__wrapper">
+			<h2 class="price-list__header">Price list</h2>
+			<table class="price-list__table table">
+				<tr class="table__row">
+					<td class="table__row-number">1</td>
+					<td class="table__secvice">
+						<span class="table__name">Classic haircut</span>
+						<span class="table__detail">with head washing</span>
+					</td>
+					<td class="table__price">$50</td>
+				</tr>
+				<tr class="table__row">
+					<td class="table__row-number">2</td>
+					<td class="table__secvice">
+						<span class="table__name">Modern choiсe</span>
+						<span class="table__detail">with head washing</span>
+					</td>
+					<td class="table__price">$50</td>
+				</tr>
+				<tr class="table__row">
+					<td class="table__row-number">3</td>
+					<td class="table__secvice">
+						<span class="table__name">Individual approach</span>
+						<span class="table__detail">with head washing</span>
+					</td>
+					<td class="table__price">$75</td>
+				</tr>
+				<tr class="table__row">
+					<td class="table__row-number">4</td>
+					<td class="table__secvice">
+						<span class="table__name">Head shaving</span>
+						<span class="table__detail">without head washing</span>
+					</td>
+					<td class="table__price">$15</td>
+				</tr>
+				<tr class="table__row">
+					<td class="table__row-number">5</td>
+					<td class="table__secvice">
+						<span class="table__name">Head shaving</span>
+						<span class="table__detail">with head washing</span>
+					</td>
+					<td class="table__price">$25</td>
+				</tr>
+			</table>
+			<div class="price-list__discount">
+				<div>From 10:00 to 14:00 <br>20% discount</div>
 			</div>
-		</article>
-		<article class="works-item">
-			<p class="works-item__image--wrapper">
-				<picture>
-					<source media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
-					<source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
-					<img src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="The example of our works">
-				</picture>
-			</p>
-			<div class="works-item__review">
-				<h2 class="works-item__title">Alex Bloggs</h2>
-				<blockquote class="works-item__text">Asked to rejuvenate and got rejuvenated! Now who says that I'm 45?</blockquote>
-				<ul class="works-item__parameter-list">
-					<li class="works-item__parameter-item works-item__parameter-item--haircut">Haircut</li>
-					<li class="works-item__parameter-item works-item__parameter-item--shaving">Shaving</li>
-					<li class="works-item__parameter-item works-item__parameter-item--mustache">Mustache</li>
-				</ul>
-			</div>
-		</article>
-		<article class="works-item">
-			<p class="works-item__image--wrapper">
-				<picture>
-					<source media="(min-width: 1200px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
-					<source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
-					<img src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="The example of our works">
-				</picture>
-			</p>
-			<div class="works-item__review">
-				<h2 class="works-item__title">Vladimir Ivanovich</h2>
-				<blockquote class="works-item__text">Ready for the winter!</blockquote>
-				<ul class="works-item__parameter-list">
-					<li class="works-item__parameter-item works-item__parameter-item--haircut">Haircut</li>
-				</ul>
-			</div>
-		</article>
-		<article class="works-item">
-			<p class="works-item__image--wrapper">
-				<picture>
-					<source media="(min-width: 1200px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
-					<source media="(min-width: 768px)" srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
-					<img src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="The example of our works">
-				</picture>
-			</p>
-			<div class="works-item__review">
-				<h2 class="works-item__title">Winston Blue</h2>
-				<blockquote class="works-item__text">As I start to overgrow, and hairs hinder to see - I am in the Borodinski in a flash!</blockquote>
-				<ul class="works-item__parameter-list">
-					<li class="works-item__parameter-item works-item__parameter-item--shaving">Shaving</li>
-					<li class="works-item__parameter-item works-item__parameter-item--mustache">Mustache</li>
-				</ul>
-			</div>
-		</article>
+		</div>
 	</section>
 
 	<footer class="page-footer">
@@ -123,8 +178,8 @@
 			<div class="page-footer__contacts contacts">
 				<b class="contacts__title">Barbershop «Borodinski»</b>
 				<p class="contacts__text">New York city, Broadway street 39/6<br>
-				<a charset="contacts__phone" href="tel:+1212121212121">
-					<span class="contacts__phone-mobile">Tel: +1 (212) 121-212-121</span>
+				<a class="contacts__phone" href="tel:+1212121212121">
+					<span class="contacts__phone-mobile">+1 (212) 121-212-121</span>
 				</a>
 				</p>
 			</div>
@@ -132,13 +187,19 @@
 				<b class="social__title">Let's be friends!</b>
 				<ul class="social__list">
 					<li class="social__item">
-						<a class="social__link social__link--twitter" href="#">We are on Twitter</a>
+						<a class="social__link social__link--twitter" href="#">
+							<svg class="social__twitter-logo" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"width="33.88px" height="33.88px" viewBox="0 0 33.88 33.88" style="enable-background:new 0 0 33.88 33.88;" xml:space="preserve"><path d="M30.414,10.031c0.014,0.297,0.021,0.595,0.021,0.897c0,9.187-6.992,19.779-19.779,19.779c-3.928,0-7.58-1.149-10.657-3.123c0.546,0.063,1.099,0.095,1.658,0.095c3.26,0,6.254-1.107,8.632-2.974c-3.039-0.058-5.607-2.065-6.491-4.828c0.424,0.082,0.858,0.125,1.308,0.125c0.635,0,1.248-0.084,1.83-0.244c-3.177-0.639-5.576-3.448-5.576-6.815c0-0.029,0-0.058,0-0.087c0.939,0.521,2.01,0.833,3.15,0.869C2.646,12.48,1.419,10.35,1.419,7.938c0-1.274,0.343-2.467,0.94-3.495c3.427,4.206,8.552,6.973,14.327,7.263c-0.117-0.509-0.18-1.038-0.18-1.584c0-3.838,3.112-6.949,6.953-6.949c1.998,0,3.805,0.844,5.07,2.192c1.582-0.311,3.072-0.89,4.416-1.686c-0.521,1.624-1.621,2.986-3.057,3.844c1.406-0.166,2.746-0.54,3.991-1.092C32.949,7.826,31.771,9.05,30.414,10.031z"/></svg>
+						We are on Twitter</a>
 					</li>
 					<li class="social__item">
-						<a class="social__link social__link--facebook" href="#">We are on Facebook</a>
+						<a class="social__link social__link--facebook" href="#">
+							<svg class="social__fb-logo" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 310 310" style="enable-background:new 0 0 310 310;" xml:space="preserve"><path d="M81.703,165.106h33.981V305c0,2.762,2.238,5,5,5h57.616c2.762,0,5-2.238,5-5V165.765h39.064c2.54,0,4.677-1.906,4.967-4.429l5.933-51.502c0.163-1.417-0.286-2.836-1.234-3.899c-0.949-1.064-2.307-1.673-3.732-1.673h-44.996V71.978c0-9.732,5.24-14.667,15.576-14.667c1.473,0,29.42,0,29.42,0c2.762,0,5-2.239,5-5V5.037c0-2.762-2.238-5-5-5h-40.545C187.467,0.023,186.832,0,185.896,0c-7.035,0-31.488,1.381-50.804,19.151c-21.402,19.692-18.427,43.27-17.716,47.358v37.752H81.703c-2.762,0-5,2.238-5,5v50.844C76.703,162.867,78.941,165.106,81.703,165.106z"/></svg>
+						We are on Facebook</a>
 					</li>
 					<li class="social__item">
-						<a class="social__link social__link--instagram" href="#">We are on Instagram</a>
+						<a class="social__link social__link--instagram" href="#">
+							<svg class="social__instagram-logo" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"width="31.002px" height="31.001px" viewBox="0 0 31.002 31.001" style="enable-background:new 0 0 31.002 31.001;"xml:space="preserve"><path d="M30.988,3.229C30.798,1.383,29.268,0.001,27.409,0C19.473,0,11.538,0,3.602,0.002c-0.217,0-0.438,0.016-0.648,0.057C1.196,0.395,0.002,1.849,0.002,3.638c0,3.956,0,7.912,0,11.868c0,3.948,0,7.896,0.002,11.844c0,0.201,0.015,0.403,0.04,0.604c0.23,1.717,1.755,3.048,3.49,3.049c7.979,0,15.959,0,23.938-0.001c0.137,0,0.272-0.008,0.409-0.023c1.753-0.206,3.116-1.737,3.116-3.502C31,19.496,31,11.516,30.998,3.536C31,3.432,31.002,3.331,30.988,3.229z M15.501,9.542c3.294-0.001,5.96,2.661,5.964,5.958c0.004,3.295-2.658,5.962-5.954,5.964c-3.302,0.001-5.972-2.668-5.968-5.968C9.547,12.21,12.215,9.542,15.501,9.542z M27.432,13.281c0,4.281,0,8.563,0,12.847c0,0.806-0.49,1.301-1.297,1.301c-6.623,0-13.246,0-19.87,0c-0.477,0-0.951,0.001-1.429,0c-0.747-0.001-1.254-0.509-1.254-1.255c-0.001-4.302,0-8.604,0-12.907c0-0.043,0-0.087,0-0.138c0.901,0,1.791,0,2.69,0c-0.602,2.429-0.326,4.753,0.863,6.951c0.869,1.604,2.115,2.851,3.704,3.748c3.138,1.771,7.042,1.604,10.03-0.438c1.658-1.134,2.85-2.642,3.561-4.521c0.707-1.875,0.799-3.789,0.305-5.744c0.901,0,1.789,0,2.695,0C27.432,13.178,27.432,13.229,27.432,13.281z M27.432,8.321c-0.002,0.705-0.521,1.219-1.229,1.22c-0.009,0-0.019,0-0.024,0c-0.574,0-1.152,0-1.73,0c-0.588,0-1.178,0.001-1.768-0.001c-0.679,0-1.207-0.507-1.211-1.186c-0.008-1.195-0.008-2.39,0-3.583c0.004-0.687,0.53-1.19,1.221-1.191c1.176-0.001,2.349-0.001,3.523,0c0.696,0.001,1.217,0.518,1.219,1.218C27.434,5.974,27.434,7.147,27.432,8.321z"/></svg>
+						We are on Instagram</a>
 					</li>
 				</ul>
 			</div>

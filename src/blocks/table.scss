@@ -1,0 +1,83 @@
+@import "../variables.scss";
+@import "../scaffolding.scss";
+@import "../mixins.scss";
+
+
+.table {
+	border-collapse: collapse;
+
+}
+
+.table__row {
+	vertical-align: text-top;
+}
+
+.table__row {
+	height: 70px;
+}
+
+.table__row-number {
+	display: none;
+}
+
+.table__name {
+	font-weight: bold;
+}
+
+.table__detail {
+	display: block;
+	&::before {
+		content: "("
+	}
+	&::after {
+		content: ")"
+	}
+}
+
+.table__price {
+	text-align: right;
+}
+
+@media (min-width: $tablet-width) {
+	.table, .table td {
+		border: 1px solid #3f3f3f;
+	}
+	.table__secvice {
+		display: flex;
+		width: 100%;
+
+		justify-content: flex-start;
+		align-items: stretch;
+	}
+	.table__name {
+		width: 60%;
+		border-right: 2px solid #3f3f3f;
+		padding-left: 20px;
+	}
+
+	.table__detail {
+		padding-left: 20px;
+		&::before {
+			content: "";
+		}
+		&::after {
+			content: "";
+		}
+	}
+
+	.table__row {
+		display: flex;
+		line-height: 60px;
+	}
+	.table__price {
+		width: 75px;
+		text-align: center;
+	}
+
+	.table__row-number {
+		display: block;
+		width: 70px;
+		text-align: center;
+		color: #9a9a9a;
+	}
+}
