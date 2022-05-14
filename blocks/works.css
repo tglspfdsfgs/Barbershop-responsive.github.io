@@ -78,6 +78,10 @@ img {
   }
 }
 @media (min-width: 1200px) {
+  .works {
+    margin-top: -390px;
+  }
+
   .works__wrapprer {
     display: flex;
     align-items: flex-start;
