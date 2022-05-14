@@ -51,6 +51,9 @@
 }
 
 @media (min-width: $desktop-width) {
+	.works {
+		margin-top: -390px;		
+	}
 	.works__wrapprer {
 		display: flex;
 		align-items: flex-start;

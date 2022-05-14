@@ -35,3 +35,28 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+@mixin input-style {
+	border: 1px solid #e5ddd5;
+	padding-left: 18px;
+	padding-right: 18px;
+	margin-bottom: 6px;
+	box-sizing: border-box;
+	
+	&::placeholder {
+		font-size: 18px;
+		color: #000;
+	}
+
+	@media (min-width: $tablet-width) {
+		margin-bottom: 35px;
+	}
+}
+
+
+
+@mixin fieldset-reset() {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
